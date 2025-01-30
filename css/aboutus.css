@@ -1,4 +1,10 @@
 /* Our team css */
+.aboutus-main-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
 .container{
     margin: 10px 0;
 

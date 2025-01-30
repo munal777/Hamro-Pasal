@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="/css/loginheaderfooter.css">
+    <link rel="stylesheet" href="/css/headerfooter.css">
 </head>
 
 <body>
@@ -30,66 +30,30 @@
             </ul>
         </nav>
     </header>
-<section>
-    <div class="left">
-        <img src="/image/form/fruit.jpeg" alt="fruit image">
-    </div>
+    <section>
+        <div class="login-container">
+            <h1>Login to Your Account</h1>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-    <div class="container">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-        <h4>
-            Sign In 
-        </h4>
+                <button type="submit">Login</button>
 
-        <!-- insert google account link -->
-            <a href="https://www.google.com/account/about/">
-                <button id="google">Sign in with Google</button>
-            </a>
+                <div class="signup-link">
+                    Don't have an account? <a href="/html/signup.html">Sign up here</a>
+                </div>
 
-        <div class="line">
-            <p id="line">
-                or sign in with email
-            </p>
+                <div id="error-message" class="error-message"></div>
+            </form>
         </div>
-
-        <form action="" onsubmit="validate()">
-
-            <div class="signin">
-
-                <div class="email">
-                    <label>Email</label>
-                    <br>
-                    <input type="email" id="email" required>
-                </div>
-
-                <br>
-
-                <div class="password">
-                    <label>Password</label>
-                    <br>
-                    <input type="password" id="password" required>
-                </div>
-                <br>
-
-                <a href="" id="forgotpassword">
-                    <b>Forgot Password?</b>
-                </a>
-
-                <br>
-                <br>
-
-                <div class="Sign In" id="signin">
-                    <button type="submit">Sign In</button>
-                </div>
-                <p id="account">
-                    Don't have an account? <a href="/html/signup.html">Sing Up</a>
-                </p>
-
-            </div>
-        </form>
-
-    </div>
-</section>
+    </section>
 <footer>
     <div class="first">
         <div class="div">

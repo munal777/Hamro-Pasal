@@ -1,23 +1,31 @@
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
 
-function validate(){
-    // variables
-var email = document.getElementById('email').value;
-var password = document.getElementById('password').value;
+    // Get input values
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
 
-    // control statement
-    if(email.length > 35)
-    {
-        alert("Invalid Email")
-        getElementById('email').style.border="2px solid red";
-        return false;
+    // Simple validation
+    if (!email || !password) {
+        showError("Please fill in all fields.");
+        return;
     }
-    else if (password.length > 20 || password.length < 6)
-    {
-        alert("Invalid Password")
-    }
-    else
-    {
-        alert("Welcome Back")
-        return true;
-    }
+
+    // Simulate a login request (replace with actual API call)
+//     setTimeout(() => {
+//         if (email === "test@example.com" && password === "password123") {
+//             // Successful login
+//             window.location.href = "/html/index.html"; // Redirect to home page
+//         } else {
+//             // Failed login
+//             showError("Invalid email or password.");
+//         }
+//     }, 1000);
+    window.location.href = "/html/index.html"; 
+});
+
+function showError(message) {
+    const errorElement = document.getElementById("error-message");
+    errorElement.textContent = message;
+    errorElement.style.display = "block"; // Show error message
 }

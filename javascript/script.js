@@ -14,9 +14,6 @@ for(i=0; i < acc.length;i++){
 } 
 
 
-
-
-
 // Connection to our blogs about us page
 function toggleMore() {
     var moreText = document.getElementById("more");

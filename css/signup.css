@@ -1,14 +1,13 @@
-/* Login Section Styles */
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 160px); /* Adjust based on header/footer height */
-    background-color: #e8f5e9;
-    padding: 100px 20px 40px 20px; /* Top padding to avoid navbar overlap */
+.signup-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 160px); /* Adjust based on header/footer height */
+        background-color: #e8f5e9;
+        padding: 180px 20px 40px 20px; /* Added top padding to avoid navbar overlap */
 }
 
-.login-container {
+.signup-container {
     background-color: white;
     padding: 40px;
     border-radius: 10px;
@@ -17,7 +16,7 @@ section {
     max-width: 400px;
 }
 
-.login-container h1 {
+h1 {
     color: #2e7d32;
     text-align: center;
     margin-bottom: 30px;
@@ -27,14 +26,14 @@ section {
     margin-bottom: 20px;
 }
 
-.form-group label {
+label {
     display: block;
     margin-bottom: 5px;
     color: #1b5e20;
     font-weight: bold;
 }
 
-.form-group input {
+input {
     width: 100%;
     padding: 12px;
     border: 2px solid #c8e6c9;
@@ -43,12 +42,12 @@ section {
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus {
+input:focus {
     outline: none;
     border-color: #2e7d32;
 }
 
-button[type="submit"] {
+button {
     width: 100%;
     padding: 12px;
     background-color: #2e7d32;
@@ -61,29 +60,21 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+button:hover {
     background-color: #1b5e20;
 }
 
-.signup-link {
+.login-link {
     text-align: center;
     margin-top: 20px;
 }
 
-.signup-link a {
+.login-link a {
     color: #2e7d32;
     text-decoration: none;
     font-weight: bold;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
     text-decoration: underline;
-}
-
-.error-message {
-    color: #ff0000;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-    display: none; /* Hidden by default */
 }

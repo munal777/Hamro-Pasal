@@ -14,9 +14,6 @@ header {
     z-index: 1000;
 }
 
-
-  
-
 .logo {
     position: relative;
     left: 30px;
@@ -44,6 +41,10 @@ header {
 
 .search {
     margin-top: 25px;
+}
+
+.cart {
+    cursor: pointer;
 }
 
 .cartIcon {
@@ -100,9 +101,7 @@ section {
     width: 100%;
 }
 
-
-
-
+/*--- Foooter section Styles ---*/
 footer {
     padding-top: 5px;
     width: 100%;
@@ -123,28 +122,7 @@ footer a {
     text-decoration: none;
     color: black;
 }
-.bg{
-    position: relative;
-}
-/* our services */
-.btn{
-    position: absolute;
-    left: 180px;
-    top: 350px;
-    padding: 10px;
-    
-    border: transparent;
-    background-color: green;
-    color: white;
-    margin-left: -100px;
 
-}
-.boy{
-    width: 200px;
-    position: absolute;
-    top: 150px;
-    left: 200px;
-}
 .div {
     gap: 400px;
 }
@@ -178,9 +156,6 @@ footer a {
 .nav2 a:hover {
     color: rgb(243, 184, 74);
 }
-/* .nav2 a:visited {
-    color: rgb(243, 184, 74);
-} */
 
 .nav2 a::before{
     content: '';
@@ -207,10 +182,6 @@ footer a {
 .social{
     transition: .2s;
     transform: scale(1.2);
-}
-
-body{
-    width: 100%;
 }
 
 @keyframes cartRotation {
