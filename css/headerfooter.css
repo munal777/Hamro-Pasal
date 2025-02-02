@@ -14,22 +14,22 @@ header {
     z-index: 1000;
 }
 
-.logo {
+/* .logo {
     position: relative;
     left: 30px;
     scale: 2;
     width: 100px;
     height: 30px;
-}
+} */
 
 .searchIcon {
     width: 20px;
     position: relative;
     bottom: 30px;
-    left: 65px;
+    left: 1rem;
 }
 
-.searchBox {
+/* .searchBox {
     width: 800px;
     height: 40px;
     border: 1px solid black;
@@ -41,7 +41,7 @@ header {
 
 .search {
     margin-top: 25px;
-}
+} */
 
 .cart {
     cursor: pointer;
@@ -54,13 +54,13 @@ header {
     background-color: transparent;
 }
 
-.nav1Lists {
+/* .nav1Lists {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     padding: 0 40px;
-}
+} */
 
 .nav2Lists {
     background-color: green;
@@ -241,3 +241,79 @@ footer a {
         transform: translateX(-970%);
     }
 }
+
+
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    flex: 0 1 auto;
+    min-width: 100px;
+    margin-right: 2%;
+}
+
+
+.search {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+}
+
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.searchBox {
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 150px;
+    }
+    .nav-container {
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 120px;
+    }
+    .nav-container {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+    .nav-container {
+        padding: 0 4%;
+    }
+}
+
