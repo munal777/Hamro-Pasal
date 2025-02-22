@@ -6,29 +6,60 @@
     <title>Research Page</title>
     <link rel="stylesheet" href="/css/research.css">
     <link rel="stylesheet" href="/css/headerfooter.css">
-    <link rel="stylesheet" href="/My content/ResearchPageFinal/researchheaderfooter.css">
+    <link rel="stylesheet" href="/css/cart.css">
 </head>
 <body>
     <header>
         <nav class="nav1">
-            <ul class="nav1Lists">
-                <li><a href="/html/index.html"><img src="/image/logo.png" alt="logo" class="logo"></a> </li>
-                <div class="search"><li><input type="text" name="searchBox" placeholder="Search...." class="searchBox"></li>
-                <li><img src="/image/search icon.png" alt="search icon"class="searchIcon"></li></div>
-                <li > <a href="forms/login.html"><img width="40px" src="/image/user.png" alt="user" class="userIcon"></a></li>
-                <div class="cart"> <div class="cartBg">My Cart</div>
-                <li><a href=""><img src="/image/cart icon.png" alt="add to cart" class="cartIcon"></a></li></div>
+            <!-- <ul class="nav1Lists"> -->
+            <ul class="nav-container">
+                <li class="logo-container">
+                    <a href="/html/landing.html">
+                        <img src="/image/logo.png" alt="logo" class="logo">
+                    </a>
+                </li>
+                <div class="search">
+                    <li><input type="text" name="searchBox" placeholder="Search...." class="searchBox"></li>
+                    <li><img src="/image/search icon.png" alt="search icon"class="searchIcon"></li>
+                </div>
+                <div class="user-cart">
+                    <li > <a href="forms/login.html"><img width="40px" src="/image/user.png" alt="user" class="userIcon"></a></li>
+                    <div class="cart"> 
+                    <div class="cartBg">My Cart</div>
+                    <li><a href=""><img src="/image/cart icon.png" alt="add to cart" class="cartIcon"></a></li>
+                    </div>
+                </div>
+                <button class="hamburger">☰</button>
             </ul>
         </nav>
         <nav class="nav2">
             <ul  class="nav2Lists">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/html/index.html">Home</a></li>
                 <li><a href="/html/product.html">Products</a></li>
                 <li><a href="/html/Research.html">Research</a></li>
                 <li><a href="/html/blog.html">Our Blog</a></li>
                 <li><a href="/html/aboutus.html">About us</a></li>
             </ul>
         </nav>
+         <!-- CART -->
+    <div class="cart-slider">
+        <h2 class="cart-title">Your Cart</h2>
+
+        <!-- CONTENT -->
+        <div class="cart-content">
+            
+        </div>
+
+        <!-- TOTAL -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+        </div>
+        <!-- BUTTON -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- CART CLOSE -->
+        <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
     </header>
 <section>
     <div class="body">
@@ -322,5 +353,7 @@
         </ul>
     </div>
 </footer>
+    <script src="/javascript/navbar.js"></script>
+    <script src="/javascript/app.js"></script>
 </body>
 </html>
